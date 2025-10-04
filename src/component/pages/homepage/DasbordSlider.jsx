@@ -1,0 +1,74 @@
+import React from 'react'
+import { IoIosCall } from "react-icons/io";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper/modules";
+import doctorimg from '../../../assets/homeimg/dasbord_doctor.png'
+import femaledoctorimg from '../../../assets/homeimg/image 61.png'
+import arrowimg from "../../../assets/homeimg/image 50.png"
+
+const DasbordSlider = () => {
+
+  const slides = [
+    {
+      title: "Hospital Care at Your Home",
+      desc: "High-quality ICU, nursing & medical care in the comfort of your home.",
+      img: doctorimg,
+    },
+    {
+      title: "Buy or Rent Top-Quality medical Equipment with Ease",
+      desc: "Choose from a wide selection of medical equipment, available for both purchase and rental. We make it easy to get the quality equipment you need, when and how you need i",
+      img: femaledoctorimg,
+    },
+  ];
+  return (
+    <div className='dasboradmain'>
+      <div className="w-full max-w-6xl mx-auto mt-5">
+        <Swiper
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 4000 }}
+          modules={[Pagination, Autoplay]}
+          loop={true}
+          className="rounded-lg"
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <div className="grid md:grid-cols-2 gap-6 bg-[#e8f8f9] p-10 rounded-lg">
+                <div className="flex justify-center items-center">
+                <div>
+                    <h2 className="text-3xl font-bold  text-[#018592] mb-4">
+                    {slide.title}
+                  </h2>
+                  <p className="mb-6">{slide.desc}</p>
+                  <div className="flex gap-4">
+                    <button className="px-5 py-2 border-2 border-amber-500 text-amber-500 rounded-full cursor-pointer font-bold text-lg">
+                      Book Appointment
+                    </button>
+                    <button className="px-5 py-2 bg-[#019196] flex items-center gap-3 text-white cursor-pointer font-bold text-lg rounded-full">
+                      Call Now <p className='font-bold text-xl'><IoIosCall/></p>
+                    </button>
+                  </div>
+                </div>
+                </div>
+
+                <div className="flex gap-7 ">
+                  <div>
+                    <img className='w-30 mt-8 hidden md:flex' src={arrowimg} alt="" />
+                  </div>
+                  <img
+                    src={slide.img}
+                    alt="medical equipment"
+                    className="rounded-lg md:w-100 w-full mt-2"
+                  />
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
+  )
+}
+
+export default DasbordSlider

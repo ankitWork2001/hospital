@@ -1,0 +1,23 @@
+import React from 'react'
+import patientimg1 from '../../../assets/homeimg/Rectangle 4492.png'
+import patientimg2 from '../../../assets/homeimg/Rectangle 4493.png'
+import patientimg3 from '../../../assets/homeimg/Rectangle 4494.png'
+import patientimg4 from '../../../assets/homeimg/Rectangle 4495.png'
+
+const Gellery = () => {
+    return (
+        <div className='mt-15'>
+            <div>
+                <p className='text-center font-medium text-3xl pt-2 textcolor'>Our Gallery</p>
+            </div>
+           <div className='grid md:grid-cols-4 gap-5 p-3 mt-3'>
+                   <div><img className='w-full' src={patientimg1} alt="patient-img" /></div>
+                   <div><img className='w-full' src={patientimg2} alt="patient-img" /></div>
+                   <div><img className='w-full' src={patientimg3} alt="patient-img" /></div>
+                   <div><img className='w-full' src={patientimg4} alt="patient-img" /></div>
+                 </div>
+        </div>
+    )
+}
+
+export default Gellery

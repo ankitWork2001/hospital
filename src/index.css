@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+/* custom css */
+/* navbar css */
+body{
+  color: #018592;
+
+}
+.textcolor {
+  color: #018592;
+}
+
+.nav-button {
+  background-color: #019196;
+  color: white;
+  padding: 8px 20px 8px 20px;
+  font-size: 17px;
+  font-weight: 400;
+  display: flex;
+  gap: 6px;
+  border-radius: 30px;
+  box-shadow: 1px 1px rgba(28, 28, 28, 0.932);
+  cursor: pointer;
+
+}
+
+.shado-input {
+  box-shadow: 2px 1px #018592;
+}
+
+
+/* navbar css end */
+
+
+
+/* homepage css */
+
+
+.dasboradmain {
+  background-color: #E6F5F5;
+}
+
+.background-img-dasbord {
+  height: 20rem;
+  width: 100%;
+  background-color: #018592;
+  border-radius: 450px 450px 0px 0px;
+  margin-top: 10vh;
+}
+
+.slider-heading{
+  color: #019196;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: 'Montserrat';
+}
+.slider-heading-2{
+  color: #019196;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: 'Montserrat';
+}
+
+
+/* services homepage css */
+
+.card-service{
+  border:  1.3px solid #019196;
+  border-radius: 13px;
+  padding: 13px; 
+  text-align: center;
+  box-shadow: 1.5px 2px #93939380;
+  margin-top: 4px;
+}
+
+.service-card-heading{
+  color: #018592;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: Montserrat;
+  padding-top: 5px;
+}
+
+
+/* emergency page css */
+
+.emergency-btn{
+  background-color: #019196;
+  border-radius: 20px;
+  padding: 8px 30px 8px 30px;
+  color: white;
+}
+
+
+
+/* aboutpage css */
+
+.aboutdasbord-img{
+  height: 30rem;
+  width: 100%;
+  background-image: url("/src/assets/aboutimg/image\ 37.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.aboutdasbord-img-child{
+background-color: #01869292;
+position: absolute;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* foter css */
+.foterfile{
+  background-color: #019196;
+}
