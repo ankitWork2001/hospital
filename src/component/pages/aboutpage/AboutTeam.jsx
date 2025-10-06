@@ -2,7 +2,6 @@ import React from 'react'
 import teammemberimg1 from "../../../assets/aboutimg/Team-member 1.jpg"
 import teammemberimg2 from "../../../assets/aboutimg/Team-member 2.jpg"
 import teammemberimg3 from "../../../assets/aboutimg/Team-member 3.jpg"
-
 import teammemberimg4 from "../../../assets/aboutimg/Rectangle 4520.png"
 import teammemberimg5 from "../../../assets/aboutimg/Rectangle 4521.png"
 import teammemberimg6 from "../../../assets/aboutimg/Rectangle 4522.png"
