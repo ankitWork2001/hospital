@@ -1,8 +1,6 @@
 // Navbar.jsx
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
-import { BiSolidMicrophone } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
@@ -10,6 +8,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [callOpen,setCallOpen] = useState(false)
 
     return (
         <nav className="w-full shadow-md bg-white">
@@ -19,30 +18,19 @@ const Navbar = () => {
                     {/* Logo */}
                     <div>
                         <NavLink to="/">
-                            <img className="w-12" src='/logo.png' alt="logo" />
+                            <img className="w-20" src='/Logo.png' alt="logo" />
                         </NavLink>
                     </div>
 
-                    {/* Search bar - only desktop */}
-                    <div className="flex border rounded-2xl md:w-96 items-center p-2 h-9 gap-2 text-gray-600 shadow-sm">
-                        <FaSearch />
-                        <input
-                            className="outline-0 w-full text-sm"
-                            type="search"
-                            placeholder="Search for product and services"
-                        />
-                        <div className="border-l h-6 flex justify-center items-center pl-2 text-gray-500">
-                            <BiSolidMicrophone />
-                        </div>
-                    </div>
-
                     {/* Location - only desktop */}
-                    <div className="hidden md:flex gap-2 items-center">
+                    <div className="hidden sm:flex md:flex gap-2 items-center">
                         <FaLocationDot className="text-gray-600" />
-                        <select className="outline-0 text-amber-600">
-                            <option value="">Mumbai</option>
-                            <option value="">Delhi</option>
-                        </select>
+                        <div>
+                            <p>Plot Number 555 Sector 39
+                                Near Bakhtawar Chock,
+                                Gurugram, Haryana</p>
+
+                        </div>
                     </div>
 
                     {/* Email btn - only desktop */}
@@ -60,11 +48,11 @@ const Navbar = () => {
                         >
                             {isOpen ? (
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
                             ) : (
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/>
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
                             )}
                         </button>
@@ -81,13 +69,17 @@ const Navbar = () => {
                     <NavLink to="/About" className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : " hover:text-amber-500"}>About Us</NavLink>
                     <NavLink to="/Medical" className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : " hover:text-amber-500"}>Medical Equipment</NavLink>
                 </div>
-               
-                <div className="flex flex-wrap gap-5">
-                    <button className="nav-button flex items-center gap-2">
-                        Book Now <IoIosCall className="text-xl"/>
+
+                <div className="flex flex-wrap gap-5 relative">
+                    <button onClick={()=>setCallOpen(!callOpen)} className="nav-button flex items-center gap-2">
+                        Book Now <IoIosCall className="text-xl" />
                     </button>
+                  { callOpen&& <div className="bg-white rounded-2xl absolute top-14 shadow-2xl p-5 z-50">
+                        <p className="flex items-center gap-2 pt-2"><IoIosCall className="text-xl" /> 72067-83874</p>
+                        <p className="flex items-center gap-2 pt-2"> <IoIosCall className="text-xl" /> 8920-889555</p>
+                    </div>}
                     <button className="nav-button flex items-center gap-2">
-                        WhatsApp <IoLogoWhatsapp className="text-green-500 text-xl"/>
+                        WhatsApp <IoLogoWhatsapp className="text-green-500 text-xl" />
                     </button>
                 </div>
             </div>
@@ -100,25 +92,33 @@ const Navbar = () => {
                     <NavLink to="/Gallery" className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>Gallery</NavLink>
                     <NavLink to="/About" className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>About Us</NavLink>
                     <NavLink to="/Medical" className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>Medical Equipment</NavLink>
-                    
-                      <div className="md:hidden flex  gap-2 items-center">
+
+                    <div className=" sm:flex md:hidden flex gap-2 items-center">
                         <FaLocationDot className="text-gray-600" />
-                        <select className="outline-0 text-amber-600">
-                            <option value="">Mumbai</option>
-                            <option value="">Delhi</option>
-                        </select>
+                        <div>
+                            <p>Plot Number 555 Sector 39
+                                Near Bakhtawar Chock,
+                                Gurugram, Haryana</p>
+
+                        </div>
                     </div>
-                     <div className="md:hidden">
+                    <div className="md:hidden">
                         <button className="border w-full rounded-full flex justify-center gap-2 items-center px-4 py-1.5 text-amber-600">
                             Email <MdEmail />
                         </button>
                     </div>
-                    <button className="w-full border rounded-xl py-2 mt-2 flex justify-center items-center gap-2 text-amber-600">
-                        Book Now <IoIosCall className="text-xl"/>
+                    <div className="relative">
+                    <button onClick={()=>setCallOpen(!callOpen)}  className="w-full border rounded-xl py-2 mt-2 flex justify-center items-center gap-2 text-amber-600 ">
+                        Book Now <IoIosCall className="text-xl" />
                     </button>
                     <button className="w-full border rounded-xl py-2 mt-2 flex justify-center items-center gap-2 text-green-600">
-                        WhatsApp <IoLogoWhatsapp className="text-xl"/>
+                        WhatsApp <IoLogoWhatsapp className="text-xl" />
                     </button>
+                     { callOpen&& <div className="bg-white rounded-2xl absolute top-14 shadow-2xl p-5 z-50">
+                        <p className="flex items-center gap-2 pt-2"><IoIosCall className="text-xl" /> 72067-83874</p>
+                        <p className="flex items-center gap-2 pt-2"> <IoIosCall className="text-xl" /> 8920-889555</p>
+                    </div>}
+                       </div>
                 </div>
             )}
         </nav>

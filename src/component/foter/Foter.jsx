@@ -4,7 +4,7 @@ const Foter = () => {
         <div className='foterfile mt-10'>
             <div className='grid sm:grid-cols-2 md:grid-cols-4 gap-4 p-4'>
                 <div className='p-2'>
-                    <img className='w-20' src='/logo.png' alt="logo" />
+                    <img className='w-20' src='/Logo.png' alt="logo" />
                     <p className='text-white font-semibold text-2xl pt-3 cursor-pointer'>Hospital at Home</p>
                     <p className='text-gray-300 pt-2'>Bringing hospital-level care to the comfort of your home with professional healthcare services.</p>
                 </div>
