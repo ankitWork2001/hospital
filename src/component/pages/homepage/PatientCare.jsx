@@ -70,10 +70,10 @@ const PatientCare = () => {
                             }} pagination={{ clickable: true }} 
                         >
                             {images.map((img, index) => (
-                                <SwiperSlide key={index} className='p-3'>
+                                <SwiperSlide key={index} className='p-3 pb-9'>
                                     <div className='pb-8 card-service'>
                                         <img src={img.image} alt={`Slide ${index + 1}`} className="lg:w-auto md:w-auto sm:w-auto w-full h-auto" />
-                                        <button className='border rounded-full border-[#018592] p-1 px-3 mt-3'>{img.text}</button>
+                                        <button className='border truncate overflow-hidden w-full rounded-full border-[#018592] p-1 px-3 mt-3'>{img.text}</button>
                                     </div>
                                 </SwiperSlide>
                             ))}

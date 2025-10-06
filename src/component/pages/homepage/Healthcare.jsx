@@ -51,9 +51,12 @@ const Healthcare = () => {
                 <div>
                     <div className='relative'>
                         <img className='w-full' src={pacentimg} alt="" />
-                        <button className=" px-4 py-2  rounded-3xl flex gap-2 items-center  absolute bottom-1 right-1 nav-button">
-                            What’s App <p className="text-green-500 text-2xl"><IoLogoWhatsapp /></p>
-                        </button>
+                       <div className='flex justify-end'>
+                         <a href="https://wa.me/917206783874">
+                            <button className="nav-button flex items-center gap-2">
+                                WhatsApp <IoLogoWhatsapp className="text-green-500 text-xl" />
+                            </button></a>
+                       </div>
                     </div>
                 </div>
             </div>

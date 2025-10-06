@@ -78,9 +78,10 @@ const Navbar = () => {
                         <p className="flex items-center gap-2 pt-2"><IoIosCall className="text-xl" /> 72067-83874</p>
                         <p className="flex items-center gap-2 pt-2"> <IoIosCall className="text-xl" /> 8920-889555</p>
                     </div>}
+                    <a href="https://wa.me/917206783874">
                     <button className="nav-button flex items-center gap-2">
                         WhatsApp <IoLogoWhatsapp className="text-green-500 text-xl" />
-                    </button>
+                    </button></a>
                 </div>
             </div>
 
@@ -111,9 +112,10 @@ const Navbar = () => {
                     <button onClick={()=>setCallOpen(!callOpen)}  className="w-full border rounded-xl py-2 mt-2 flex justify-center items-center gap-2 text-amber-600 ">
                         Book Now <IoIosCall className="text-xl" />
                     </button>
-                    <button className="w-full border rounded-xl py-2 mt-2 flex justify-center items-center gap-2 text-green-600">
-                        WhatsApp <IoLogoWhatsapp className="text-xl" />
-                    </button>
+                    <a href="https://wa.me/917206783874">
+                    <button className="nav-button flex items-center gap-2">
+                        WhatsApp <IoLogoWhatsapp className="text-green-500 text-xl" />
+                    </button></a>
                      { callOpen&& <div className="bg-white rounded-2xl absolute top-14 shadow-2xl p-5 z-50">
                         <p className="flex items-center gap-2 pt-2"><IoIosCall className="text-xl" /> 72067-83874</p>
                         <p className="flex items-center gap-2 pt-2"> <IoIosCall className="text-xl" /> 8920-889555</p>
