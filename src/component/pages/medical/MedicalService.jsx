@@ -102,7 +102,7 @@ const MedicalService = () => {
                     {images.map((item) => (
                         <div className='card-service'>
                             <img className='md:h-65 w-full md:object-cover' src={item} alt="medical-machine-img" />
-                            <button className='border rounded-full p-1 px-3 border-[#018592] text-xl font-semibold mt-2'>Enquire Now</button>
+                            <button className='border rounded-full p-1 px-3 border-[#018592] text-xl font-semibold mt-2 cursor-pointer hover:bg-[#018592] hover:text-white'>Enquire Now</button>
                         </div>
                     ))}
                 </div>
