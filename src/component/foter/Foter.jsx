@@ -9,19 +9,25 @@ const Foter = () => {
                     <p className='text-gray-300 pt-2'>Bringing hospital-level care to the comfort of your home with professional healthcare services.</p>
                 </div>
                 <div className='p-3 text-center'>
-                    <p className='pt-16 text-2xl text-white font-semibold cursor-pointer'>Services</p>
-                    <p className='text-gray-300 pt-2  cursor-pointer'>ICU at Home</p>
+                    <p className='pt-6 text-2xl text-white font-semibold cursor-pointer'>Services</p>
                     <p className='text-gray-300 pt-2  cursor-pointer'>Nursing Care</p>
+                    <p className='text-gray-300 pt-2  cursor-pointer'>ICU Setup</p>
+                    <p className='text-gray-300 pt-2  cursor-pointer'>GDA Care</p>
+                    <p className='text-gray-300 pt-2  cursor-pointer'>Specialized Nurse at home</p>
+                    <p className='text-gray-300 pt-2  cursor-pointer'>Mother & Child Care</p>
+                    <p className='text-gray-300 pt-2  cursor-pointer'>Trained Attendant at home</p>
                 </div>
                 <div className='p-3 text-center'>
-                    <p className='pt-16 text-2xl text-white font-semibold cursor-pointer'>Support</p>
+                    <p className='pt-6 text-2xl text-white font-semibold cursor-pointer'>Support</p>
                     <p className='text-gray-300 pt-2 cursor-pointer'>24/7 Emergency</p>
                     <p className='text-gray-300 pt-2 cursor-pointer'>Contact Us</p>
                 </div>
                 <div className='p-3 text-center'>
-                    <p className='pt-16 text-2xl text-white font-semibold cursor-pointer'>Contact</p>
+                    <p className='pt-6 text-2xl text-white font-semibold cursor-pointer'>Contact</p>
                     <p className='text-gray-300 pt-2 cursor-pointer'>1-800-HOME-ICU</p>
                     <p className='text-gray-300 pt-2 cursor-pointer'>care@hospitalathome.com</p>
+                    <p className='text-gray-300 pt-2 cursor-pointer'>72067-83874</p>
+                    <p className='text-gray-300 pt-2 cursor-pointer'>8920-889555</p>
                 </div>
             </div>
         </div>

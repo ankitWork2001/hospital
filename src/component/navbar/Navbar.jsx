@@ -78,7 +78,7 @@ const Navbar = () => {
                         <p className="flex items-center gap-2 pt-2"><IoIosCall className="text-xl" /> 72067-83874</p>
                         <p className="flex items-center gap-2 pt-2"> <IoIosCall className="text-xl" /> 8920-889555</p>
                     </div>}
-                    <a href="https://wa.me/917206783874">
+                    <a target="_blank" href="https://wa.me/917206783874">
                     <button className="nav-button flex items-center gap-2">
                         WhatsApp <IoLogoWhatsapp className="text-green-500 text-xl" />
                     </button></a>
@@ -104,16 +104,16 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="md:hidden">
-                        <button className="border w-full rounded-full flex justify-center gap-2 items-center px-4 py-1.5 text-amber-600">
+                        <button className="border w-full rounded-full flex justify-center gap-2 items-center px-4 py-1.5 text-amber-600 mt-2">
                             Email <MdEmail />
                         </button>
                     </div>
                     <div className="relative">
-                    <button onClick={()=>setCallOpen(!callOpen)}  className="w-full border rounded-xl py-2 mt-2 flex justify-center items-center gap-2 text-amber-600 ">
+                    <button onClick={()=>setCallOpen(!callOpen)}  className="w-full border rounded-xl py-2 mt-2 flex justify-center items-center gap-2 text-amber-600">
                         Book Now <IoIosCall className="text-xl" />
                     </button>
                     <a href="https://wa.me/917206783874">
-                    <button className="nav-button flex items-center gap-2">
+                    <button className="nav-button flex items-center gap-2 mt-2">
                         WhatsApp <IoLogoWhatsapp className="text-green-500 text-xl" />
                     </button></a>
                      { callOpen&& <div className="bg-white rounded-2xl absolute top-14 shadow-2xl p-5 z-50">

@@ -10,6 +10,7 @@ import Gallery from './Gallery'
 import Partner from './Partner'
 import Emergency from './Emergency'
 
+
 const HomeLayout = () => {
   return (
     <div>
