@@ -8,7 +8,7 @@ const Offers = () => {
   return (
     <div className='mt-3'>
       <div>
-         <p className='text-center font-medium text-3xl pt-2 textcolor'>New Offers</p>
+         <p className='text-center font-medium text-3xl pt-2 '>New Offers</p>
       </div>
       <div className='grid md:grid-cols-3 gap-5 md:p-3 p-2 mt-3'>
         <div className='card-service flex md:gap-2 justify-between '>
@@ -17,7 +17,7 @@ const Offers = () => {
             <p className='text-2xl font-semibold pt-3'>Physiotherapy</p>
             <p className='pt-4'>Flat RS.100/-off on</p>
             <p className='pt-1'>your 1st physiotherapy session.</p>
-            <button className='border rounded-full p-1 px-3 text-xl mt-4'>Book Now</button>
+            <button className='border rounded-full p-1 px-3 text-xl mt-4 hover:bg-[#019196] hover:text-white cursor-pointer'>Book Now</button>
           </div>
           <div className='md:w-60 w-auto'> 
           <img className='w-full mt-3' src={patientimg1} alt="patient-img" />
@@ -30,7 +30,7 @@ const Offers = () => {
             <p className='text-2xl font-semibold pt-3'>ElderCare</p>
             <p className='pt-4'>Get Flat 10% off</p>
             <p className='pt-1'>Caretaker at Home.</p>
-            <button className='border rounded-full p-1 px-3 text-xl mt-4'>Book Now</button>
+            <button className='border rounded-full p-1 px-3 text-xl mt-4 hover:bg-[#019196] hover:text-white cursor-pointer'>Book Now</button>
           </div>
           <div className='md:w-60 w-auto'>
           <img className='w-full' src={patientimg2} alt="patient-img" />
@@ -43,7 +43,7 @@ const Offers = () => {
             <p className='text-2xl font-semibold pt-3'>Doctor Visit</p>
             <p className='pt-4'>Flat 10% off</p>
             <p className='pt-1'>On Nurse visti to your home.</p>
-            <button className='border rounded-full p-1 px-3 text-xl mt-4'>Book Now</button>
+            <button className='border rounded-full p-1 px-3 text-xl mt-4 hover:bg-[#019196] hover:text-white cursor-pointer'>Book Now</button>
           </div>
           <div className='md:w-60 w-auto'>
           <img className='w-full' src={patientimg3} alt="patient-img" />

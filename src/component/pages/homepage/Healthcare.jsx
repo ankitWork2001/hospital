@@ -7,7 +7,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 const Healthcare = () => {
     return (
         <div className='mt-3'>
-            <p className='text-center font-medium text-3xl pt-2 textcolor'>Why Choose Us ?</p>
+            <p className='text-center font-medium text-3xl pt-2'>Why Choose Us ?</p>
 
             <div className='grid md:grid-cols-2 p-3 gap-5 mt-4'>
                 <div className='p-1 mt-8'>

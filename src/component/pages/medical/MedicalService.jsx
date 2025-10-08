@@ -1,12 +1,5 @@
 import React from 'react'
-import machineimg1 from "../../../assets/medicalimg/Rectangle 4433 (1).png"
-import machineimg2 from "../../../assets/medicalimg/Rectangle 4462 (1).png"
-import machineimg3 from "../../../assets/medicalimg/Rectangle 4463 (1).png"
-import machineimg4 from "../../../assets/medicalimg/Rectangle 4464 (1).png"
-import machineimg5 from "../../../assets/medicalimg/Rectangle 4466 (1).png"
-import machineimg6 from "../../../assets/medicalimg/Rectangle 4469.png"
-import machineimg7 from "../../../assets/medicalimg/Rectangle 4472 (1).png"
-import machineimg8 from "../../../assets/medicalimg/Rectangle 4475 (1).png"
+import machineimg8 from "../../../assets/medicalimg/Rectangle 4433 (1).png"
 import machineimg9 from "../../../assets/medicalimg/IMG-20251006-WA0026.jpg"
 import machineimg10 from "../../../assets/medicalimg/IMG-20251006-WA0027.jpg"
 import machineimg11 from "../../../assets/medicalimg/IMG-20251006-WA0028.jpg"
@@ -38,13 +31,6 @@ import machineimg35 from "../../../assets/medicalimg/IMG-20251006-WA0052.jpg"
 const MedicalService = () => {
 
     const images = [
-        machineimg1,
-        machineimg2,
-        machineimg3,
-        machineimg4,
-        machineimg5,
-        machineimg6,
-        machineimg7,
         machineimg8,
         machineimg9,
         machineimg10,

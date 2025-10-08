@@ -35,7 +35,7 @@ const Navbar = () => {
 
                     {/* Email btn - only desktop */}
                     <div className="hidden md:block">
-                        <button className="border rounded-full flex gap-2 items-center px-4 py-1.5 text-amber-600">
+                        <button className="border rounded-full flex gap-2 items-center px-4 py-1.5 text-amber-600 hover:bg-amber-500 hover:text-white cursor-pointer">
                             Email <MdEmail />
                         </button>
                     </div>
@@ -71,7 +71,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex flex-wrap gap-5 relative">
-                    <button onClick={()=>setCallOpen(!callOpen)} className="nav-button flex items-center gap-2">
+                    <button onClick={()=>setCallOpen(!callOpen)} className="nav-button flex items-center gap-2 "> 
                         Book Now <IoIosCall className="text-xl" />
                     </button>
                   { callOpen&& <div className="bg-white rounded-2xl absolute top-14 shadow-2xl p-5 z-50">

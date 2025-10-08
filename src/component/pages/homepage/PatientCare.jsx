@@ -54,7 +54,7 @@ const PatientCare = () => {
   return(
      <div className='mt-10'>
             <div>
-                <p className='text-center font-medium text-3xl pt-2 textcolor'>Care Tailored for your specific needs</p>
+                <p className='text-center font-medium text-3xl pt-2 '>Care Tailored for your specific needs</p>
             </div>
 
               <Swiper
@@ -73,7 +73,7 @@ const PatientCare = () => {
                                 <SwiperSlide key={index} className='p-3 pb-9'>
                                     <div className='pb-8 card-service'>
                                         <img src={img.image} alt={`Slide ${index + 1}`} className="lg:w-auto md:w-auto sm:w-auto w-full h-auto" />
-                                        <button className='border truncate overflow-hidden w-full rounded-full border-[#018592] p-1 px-3 mt-3'>{img.text}</button>
+                                        <button className='border truncate overflow-hidden w-full rounded-full border-[#018592] p-1 px-3 mt-3 hover:bg-[#019196] hover:text-white cursor-pointer'>{img.text}</button>
                                     </div>
                                 </SwiperSlide>
                             ))}

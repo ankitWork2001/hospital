@@ -8,6 +8,11 @@ body{
 }
 .textcolor {
   color: #018592;
+  cursor: pointer;
+}
+.textcolor:hover{
+  background-color: #018592;
+  color: white;
 }
 
 .nav-button {
@@ -21,12 +26,13 @@ body{
   border-radius: 30px;
   box-shadow: 1px 1px rgba(28, 28, 28, 0.932);
   cursor: pointer;
-
+}
+.nav-button:hover{
+  background-color: white;
+  color: #019196;
 }
 
-.shado-input {
-  box-shadow: 2px 1px #018592;
-}
+
 
 
 /* navbar css end */
@@ -35,10 +41,6 @@ body{
 
 /* homepage css */
 
-
-.dasboradmain {
-  background-color: #E6F5F5;
-}
 
 .background-img-dasbord {
   height: 20rem;
@@ -89,6 +91,11 @@ body{
   border-radius: 20px;
   padding: 8px 30px 8px 30px;
   color: white;
+}
+.emergency-btn:hover{
+  background-color: white;
+  border: 1.5px solid #018592;
+  color: #018592;
 }
 
 
