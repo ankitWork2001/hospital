@@ -14,7 +14,7 @@ const MedicalDasborad = () => {
                         <p className='slider-heading-2'>Convenient, personalized medical care delivered in the comfort of your home.</p>
                        <div className='md:flex sm:flex flex-wrap gap-6 mt-5 relative items-center'>
                         <a target='_blank' href="https://wa.me/917206783874">
-                         <button className='border border-amber-500 text-amber-500 rounded-2xl p-1.5 px-5 mt-3'>Book Appointment </button></a>
+                         <button className='border border-amber-500 hover:bg-amber-500 hover:text-white text-amber-500 rounded-2xl p-1.5 px-5 mt-3'>Book Appointment </button></a>
                          <div>
                         <button onClick={()=>setCallOpen(!callOpen)} className='nav-button mt-3'>Call Now   <p className="text-2xl">< IoIosCall /></p></button>
                          { callOpen&& <div className="bg-white rounded-2xl absolute  md:top-14 shadow-2xl p-5 z-50">

@@ -68,18 +68,18 @@ const MedicalService = () => {
             <div className='flex justify-center mt-5'>
                 <div>
                     <div className='flex gap-4 flex-wrap p-2'>
-                        <button className='p-2 border border-[#018592] rounded-full px-5'>Masks</button>
-                        <button className='p-2 border border-[#018592] rounded-full px-5'>Wheel Chair</button>
-                        <button className='p-2 border border-[#018592] rounded-full px-5'>Respiratory</button>
-                        <button className='p-2 border border-[#018592] rounded-full px-5'>DVT Pump</button>
-                        <button className='p-2 border border-[#018592] rounded-full px-5'>Pumps</button>
+                        <button className='p-2 border hover:bg-[#018592] hover:text-white border-[#018592] rounded-full px-5'>Masks</button>
+                        <button className='p-2 border hover:bg-[#018592] hover:text-white border-[#018592] rounded-full px-5'>Wheel Chair</button>
+                        <button className='p-2 border hover:bg-[#018592] hover:text-white border-[#018592] rounded-full px-5'>Respiratory</button>
+                        <button className='p-2 border hover:bg-[#018592] hover:text-white border-[#018592] rounded-full px-5'>DVT Pump</button>
+                        <button className='p-2 border hover:bg-[#018592] hover:text-white border-[#018592] rounded-full px-5'>Pumps</button>
                     </div>
                     <div className='flex gap-4 flex-wrap p-2'>
-                        <button className='p-2 border border-[#018592] rounded-full px-5'>Monitoring</button>
-                        <button className='p-2 border border-[#018592] rounded-full px-5'>Nimbus Bed</button>
-                        <button className='p-2 border border-[#018592] rounded-full px-5'>Oxygen Concentrator</button>
-                        <button className='p-2 border border-[#018592] rounded-full px-5'>Ventilator</button>
-                        <button className='p-2 border border-[#018592] rounded-full px-5'>Suction</button>
+                        <button className='p-2 border hover:bg-[#018592] hover:text-white  border-[#018592] rounded-full px-5'>Monitoring</button>
+                        <button className='p-2 border hover:bg-[#018592] hover:text-white  border-[#018592] rounded-full px-5'>Nimbus Bed</button>
+                        <button className='p-2 border hover:bg-[#018592] hover:text-white  border-[#018592] rounded-full px-5'>Oxygen Concentrator</button>
+                        <button className='p-2 border hover:bg-[#018592] hover:text-white  border-[#018592] rounded-full px-5'>Ventilator</button>
+                        <button className='p-2 border hover:bg-[#018592] hover:text-white  border-[#018592] rounded-full px-5'>Suction</button>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@ const MedicalService = () => {
                 <div className='grid md:grid-cols-4 gap-4 p-3'>
                     {images.map((item) => (
                         <div className='card-service'>
-                            <img className='md:h-65 w-full md:object-cover' src={item} alt="medical-machine-img" />
+                            <img className='md:h-65 w-full md:object-cover hover:scale-105 transition duration-300 ease-in-out' src={item} alt="medical-machine-img" />
                             <button className='border rounded-full p-1 px-3 border-[#018592] text-xl font-semibold mt-2 cursor-pointer hover:bg-[#018592] hover:text-white'>Enquire Now</button>
                         </div>
                     ))}

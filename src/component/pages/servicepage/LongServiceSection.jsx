@@ -8,7 +8,7 @@ const LongServiceSection = () => {
     return (
         <div>
             <div className='mt-3'>
-                <p className='text-center font-medium text-3xl pt-2 textcolor'>Long Term Care Services</p>
+                <p className='text-center font-medium text-3xl pt-2'>Long Term Care Services</p>
                 <div className='grid md:grid-cols-4 gap-4 p-3 mt-4'>
                     <div className='card-service'>
                         <div className=' flex justify-center'>

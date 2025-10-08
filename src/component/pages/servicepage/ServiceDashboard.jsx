@@ -14,7 +14,7 @@ const ServiceDashboard = () => {
                   <p className='slider-heading-2'>We provide complete hospital-level care in your home with professional medical staff and advanced equipment</p>
                  <div className='md:flex sm:flex flex-wrap gap-6 mt-5 relative items-center'>
                   <a target='_blank' href="https://wa.me/917206783874">
-                   <button className='border border-amber-500 text-amber-500 rounded-2xl p-1.5 px-5 mt-3'>Book Appointment </button>
+                   <button className='border border-amber-500 hover:bg-amber-500 hover:text-white text-amber-500 rounded-2xl p-1.5 px-5 mt-3'>Book Appointment </button>
                    </a>
                    <div>
                   <button onClick={()=>setCallOpen(!callOpen)} className='nav-button mt-3'>Call Now   <p className="text-2xl">< IoIosCall /></p></button>
