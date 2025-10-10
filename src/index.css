@@ -125,3 +125,12 @@ align-items: center;
 .foterfile{
   background-color: #019196;
 }
+
+
+.helptext{
+  display: none;
+}
+
+.icondiv:hover .helptext{
+  display: block !important;
+}

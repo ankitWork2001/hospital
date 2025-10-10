@@ -87,7 +87,7 @@ const MedicalService = () => {
                 <div className='grid md:grid-cols-4 gap-4 p-3'>
                     {images.map((item) => (
                         <div className='card-service'>
-                            <img className='md:h-65 w-full md:object-cover hover:scale-105 transition duration-300 ease-in-out' src={item} alt="medical-machine-img" />
+                            <img className='md:h-65 w-full md:object-cover hover:scale-105 transition duration-300 ease-in-out rounded' src={item} alt="medical-machine-img" />
                             <button className='border rounded-full p-1 px-3 border-[#018592] text-xl font-semibold mt-2 cursor-pointer hover:bg-[#018592] hover:text-white'>Enquire Now</button>
                         </div>
                     ))}
