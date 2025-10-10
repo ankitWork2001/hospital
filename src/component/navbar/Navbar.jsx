@@ -8,7 +8,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [callOpen,setCallOpen] = useState(false)
+    const [callOpen, setCallOpen] = useState(false)
 
     return (
         <nav className="w-full shadow-md bg-white">
@@ -71,28 +71,28 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex flex-wrap gap-5 relative">
-                    <button onClick={()=>setCallOpen(!callOpen)} className="nav-button flex items-center gap-2 "> 
+                    <button onClick={() => setCallOpen(!callOpen)} className="nav-button flex items-center gap-2 ">
                         Book Now <IoIosCall className="text-xl" />
                     </button>
-                  { callOpen&& <div className="bg-white rounded-2xl absolute top-14 shadow-2xl p-5 z-50">
+                    {callOpen && <div className="bg-white rounded-2xl absolute top-14 shadow-2xl p-5 z-50">
                         <p className="flex items-center gap-2 pt-2"><IoIosCall className="text-xl" /> 72067-83874</p>
                         <p className="flex items-center gap-2 pt-2"> <IoIosCall className="text-xl" /> 8920-889555</p>
                     </div>}
                     <a target="_blank" href="https://wa.me/917206783874">
-                    <button className="nav-button flex items-center gap-2">
-                        WhatsApp <IoLogoWhatsapp className="text-green-500 text-xl" />
-                    </button></a>
+                        <button className="nav-button flex items-center gap-2">
+                            WhatsApp <IoLogoWhatsapp className="text-green-500 text-xl" />
+                        </button></a>
                 </div>
             </div>
 
             {/* Mobile Menu */}
             {isOpen && (
                 <div className="md:hidden bg-white px-4 py-4 space-y-3 shadow-lg">
-                    <NavLink to="/" className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>Home</NavLink>
-                    <NavLink to="/Services" className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>Services</NavLink>
-                    <NavLink to="/Gallery" className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>Gallery</NavLink>
-                    <NavLink to="/About" className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>About Us</NavLink>
-                    <NavLink to="/Medical" className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>Medical Equipment</NavLink>
+                    <NavLink to="/" onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>Home</NavLink>
+                    <NavLink to="/Services" onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>Services</NavLink>
+                    <NavLink to="/Gallery" onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>Gallery</NavLink>
+                    <NavLink to="/About" onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>About Us</NavLink>
+                    <NavLink to="/Medical" onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'bg-amber-500 text-white rounded-2xl px-4 py-1 font-medium' : "hover:text-amber-500 block"}>Medical Equipment</NavLink>
 
                     <div className=" sm:flex md:hidden flex gap-2 items-center">
                         <FaLocationDot className="text-gray-600" />
@@ -109,18 +109,18 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div className="relative">
-                    <button onClick={()=>setCallOpen(!callOpen)}  className="w-full border rounded-xl py-2 mt-2 flex justify-center items-center gap-2 text-amber-600">
-                        Book Now <IoIosCall className="text-xl" />
-                    </button>
-                    <a href="https://wa.me/917206783874">
-                    <button className="nav-button flex items-center gap-2 mt-2">
-                        WhatsApp <IoLogoWhatsapp className="text-green-500 text-xl" />
-                    </button></a>
-                     { callOpen&& <div className="bg-white rounded-2xl absolute top-14 shadow-2xl p-5 z-50">
-                        <p className="flex items-center gap-2 pt-2"><IoIosCall className="text-xl" /> 72067-83874</p>
-                        <p className="flex items-center gap-2 pt-2"> <IoIosCall className="text-xl" /> 8920-889555</p>
-                    </div>}
-                       </div>
+                        <button onClick={() => setCallOpen(!callOpen)} className="w-full border rounded-xl py-2 mt-2 flex justify-center items-center gap-2 text-amber-600">
+                            Book Now <IoIosCall className="text-xl" />
+                        </button>
+                        <a href="https://wa.me/917206783874">
+                            <button onClick={() => setIsOpen(!isOpen)} className="nav-button flex items-center gap-2 mt-2">
+                                WhatsApp <IoLogoWhatsapp className="text-green-500 text-xl" />
+                            </button></a>
+                        {callOpen && <div className="bg-white rounded-2xl absolute top-14 shadow-2xl p-5 z-50">
+                            <p className="flex items-center gap-2 pt-2"><IoIosCall className="text-xl" /> 72067-83874</p>
+                            <p className="flex items-center gap-2 pt-2"> <IoIosCall className="text-xl" /> 8920-889555</p>
+                        </div>}
+                    </div>
                 </div>
             )}
         </nav>

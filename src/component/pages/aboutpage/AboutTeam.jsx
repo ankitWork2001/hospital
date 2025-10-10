@@ -20,12 +20,14 @@ const AboutTeam = () => {
           <div className='w-full md:h-90 overflow-hidden'>
             <img src={teammemberimg2} alt="" />
           </div>
+                    <p className='text-xl text-center font-medium'>Bijesh</p>
+
         </div>
         <div className='mt-2 p-1'>
           <div className='w-full md:h-90 overflow-hidden'>
             <img src={teammemberimg3} alt="" />
           </div>
-                    <p className='text-xl text-center font-medium'>Dr Lakhan singh</p>
+                    <p className='text-xl text-center font-medium'>Lakhan singh</p>
 
         </div>
 
